@@ -2,27 +2,27 @@ import { NavLink } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
 const menus = [{
-  title: 'Главная',
-  uri: '/',
+  title: 'Home',
+  uri: `/`,
   id: nanoid(),
 }, {
-  title: 'Дрифт-такси',
-  uri: '/drift',
+  title: 'Page2',
+  uri: '/Page2',
   id: nanoid(),
 }, {
-  title: 'Time Attack',
-  uri: '/timeattack',
+  title: 'Page3',
+  uri: '/Page3',
   id: nanoid(),
 }, {
-  title: 'Forza Karting',
-  uri: '/forza',
+  title: 'Page4',
+  uri: '/Page4',
   id: nanoid(),
 },
 ];
 
-export default function Menu() {  
+export default function NavMenu() {  
   return (
-    <nav className="menu">
+    <nav className="menu__box">
       {menus.map((menu) => (
         <NavLink exact to={menu.uri} 
             className="menu__item" 
